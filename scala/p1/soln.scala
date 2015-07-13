@@ -1,13 +1,6 @@
-object soln{
-
+object Soln {
 	def main(args: Array[String]){
-
-		val upper_bound = 1000
-		val divisors = Set(3, 5)
-        val multiples = Set()
-        
-    
-        
+		val answer = (0 to 999).filter(x => (x % 3 == 0 | x % 5 == 0)).sum
+		println(answer)
 	}
-	
 }
